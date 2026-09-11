@@ -1,100 +1,128 @@
-<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
+# Kumbidi Times 🔮
 
-
-
-# [Project Name] 🎯
-
-
-## Basic Details
-### Team Name: [Name]
-
-
-### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
-### Project Description
-[2-3 lines about what your project does]
-
-### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
-
-### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
-## Technical Details
-### Technologies/Components Used
-For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+![TinkerHub](https://img.shields.io/badge/TinkerHub-24-black)
+![Useless Projects](https://img.shields.io/badge/UselessProjects--26-26-orange)
+![HTML](https://img.shields.io/badge/HTML5-E34F26)
+![CSS](https://img.shields.io/badge/CSS3-1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E)
 
 ---
-Made with ❤️ at TinkerHub Useless Projects 
 
-![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
-![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
+## 🎯 Basic Details
+
+### Team Name: Chee kunchi
+
+### Team Members
+
+- **Team Lead:** Parvathi KS - [College Name]
+- **Member 2:** Aisha Fathihah - [College Name]
+
+---
+
+## 🔮 Project Description
+
+**Kumbidi Times** is a deliberately useless Malayalam/Manglish "appliance astrology" web application.
+
+Users enter their personal details and select a household appliance such as an air fryer, fridge, fan, mixer, or laptop charger. The application then generates a completely fictional **Appliance Jathakam**, compatibility score, Aunty/Uncle verdicts, cosmic warnings, remedies, and dramatic timing alerts.
+
+Because apparently, even your air fryer has a destiny. 😌🔮
+
+---
+
+## 😂 The Problem (that doesn't exist)
+
+Have you ever wondered whether your **air fryer is compatible with your rashi?**
+
+Probably not.
+
+That's the problem.
+
+People already have enough astrology for:
+
+- Love ❤️
+- Marriage 💍
+- Career 💼
+- Money 💰
+- Family 👨‍👩‍👧‍👦
+
+But nobody is checking the horoscope of their **mixer grinder**.
+
+What if your fridge has a bad planetary alignment?
+
+What if your air fryer is secretly causing family drama?
+
+What if your laptop charger and your rashi are simply... incompatible?
+
+These extremely important questions were being ignored.
+
+---
+
+## 💡 The Solution (that nobody asked for)
+
+We created **Kumbidi Times** — the world's probably unnecessary appliance astrology platform.
+
+The application combines:
+
+- 🔮 Fake astrology
+- 🏠 Household appliances
+- 😂 Malayalam/Manglish humour
+- 👵 Aunty-level judgement
+- 👴 Uncle-level advice
+- 💕 Compatibility scores
+- ⏰ Cosmic deadlines
+- 🍵 Completely unnecessary remedies
+
+Simply enter your details, select an appliance, and let **Aunty decide your appliance's destiny**.
+
+---
+
+# 🛠️ Technical Details
+
+## Technologies/Components Used
+
+### For Software
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+- **Google Fonts**
+- **Git**
+- **GitHub**
+- **Vercel**
+- **VS Code**
+
+### Frameworks
+
+- No frontend framework
+- Built using pure HTML, CSS and JavaScript
+
+### Libraries
+
+- No major external JavaScript libraries
+- Google Fonts for typography
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- Browser Developer Tools
+
+### For Hardware
+
+No special hardware components are required.
+
+The project is completely software-based and can be accessed using any modern web browser.
+
+---
+
+# ⚙️ Implementation
+
+## For Software
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/aishafaathi/useless_project_temp.git
