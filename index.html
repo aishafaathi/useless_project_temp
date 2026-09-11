@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kumbidi Times | ദിവസ രാശിഫലം</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <!-- ========================================
+       DIVINE INTRO
+       ======================================== -->
+  <div class="cosmic-intro" id="cosmicIntro">
+    <div class="gold-stars stars-layer-one"></div>
+    <div class="gold-stars stars-layer-two"></div>
+    <div class="gold-nebula nebula-one"></div>
+    <div class="gold-nebula nebula-two"></div>
+    <div class="gold-sparkles" id="particles"></div>
+
+    <main class="divasa-intro-content">
+      <p class="intro-top-line">ശുഭദിനം മോനേ... മോളേ...</p>
+
+      <div class="deity-photo-wrap">
+        <div class="outer-halo halo-one"></div>
+        <div class="outer-halo halo-two"></div>
+        <div class="outer-halo halo-three"></div>
+
+        <div class="gold-halo">
+          <span class="halo-ray ray-1"></span>
+          <span class="halo-ray ray-2"></span>
+          <span class="halo-ray ray-3"></span>
+          <span class="halo-ray ray-4"></span>
+          <span class="halo-ray ray-5"></span>
+          <span class="halo-ray ray-6"></span>
+          <span class="halo-ray ray-7"></span>
+          <span class="halo-ray ray-8"></span>
+        </div>
+
+        <div class="photo-frame">
+          <img
+            class="aunty-photo"
+            src="aunty.png"
+            alt="Kumbidi Times Oracle"
+          />
+        </div>
+
+        <div class="photo-glow"></div>
+      </div>
+
+      <h1 class="divasa-title">
+        <span class="welcome-text">കുമ്പിടി ടൈംസിലേക്ക് സ്വാഗതം</span>
+        <span class="rashi-text">ദിവസ രാശിഫലം</span>
+      </h1>
+
+      <p class="divasa-subtitle">
+        നക്ഷത്രം നോക്കി പറയാം... പക്ഷേ ആദ്യം ചായ കുടിച്ചോ?
+      </p>
+
+      <div class="gold-divider">
+        <span>✦</span>
+        <span>☾</span>
+        <span>✦</span>
+      </div>
+
+      <button class="cosmic-enter-btn" id="enterBtn" type="button">
+        <span>രാശിഫലം നോക്കാം</span>
+        <span class="sparkle">✨</span>
+      </button>
+
+      <p class="intro-disclaimer">
+        കുടുംബത്തിലെ എല്ലാവരോടും പറയരുത്. അമ്മായി അറിഞ്ഞാൽ നാട്ടിൽ മുഴുവൻ അറിയും.
+      </p>
+    </main>
+  </div>
+
+  <!-- ========================================
+       MAIN APP
+       ======================================== -->
+  <main class="container" id="mainContainer">
+    <header class="site-header">
+      <h1>🔮 Kumbidi Times</h1>
+      <p>Personal Appliance Rashi Bhalam with Full Paradushanam</p>
+    </header>
+
+    <!-- STEP 1: USER PROFILE -->
+    <section class="profile-section" id="profileSection">
+      <h2>ആദ്യം നിന്റെ details പറയു, mole</h2>
+
+      <p class="section-subtitle">
+        Auntyക്ക് എല്ലാം അറിയണം. പേര്, രാശി, എല്ലാം.
+      </p>
+
+      <div class="profile-form">
+        <div class="form-group">
+          <label for="userName">നിന്റെ പേര് / Your Name</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Example: Aisha"
+            maxlength="30"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="userZodiac">നിന്റെ രാശി / Your Zodiac Sign</label>
+
+          <select id="userZodiac">
+            <option value="">Select your rashi...</option>
+            <option value="aries">♈ Aries / മേടം</option>
+            <option value="taurus">♉ Taurus / ഇടവം</option>
+            <option value="gemini">♊ Gemini / മിഥുനം</option>
+            <option value="cancer">♋ Cancer / കർക്കിടകം</option>
+            <option value="leo">♌ Leo / ചിങ്ങം</option>
+            <option value="virgo">♍ Virgo / കന്നി</option>
+            <option value="libra">♎ Libra / തുലാം</option>
+            <option value="scorpio">♏ Scorpio / വൃശ്ചികം</option>
+            <option value="sagittarius">♐ Sagittarius / ധനു</option>
+            <option value="capricorn">♑ Capricorn / മകരം</option>
+            <option value="aquarius">♒ Aquarius / കുംഭം</option>
+            <option value="pisces">♓ Pisces / മീനം</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="userBirthDate">ജനന തീയതി / Birth Date (Optional)</label>
+          <input type="date" id="userBirthDate" />
+        </div>
+
+        <div class="mode-picker">
+          <p>ആരോടാണ് ചോദിക്കേണ്ടത്?</p>
+
+          <div class="mode-options">
+            <button class="mode-card selected" data-mode="aunty" type="button">
+              <span class="mode-emoji">👵</span>
+              <span class="mode-name">Aunty Mode</span>
+              <small>Gossip, marriage, snacks, drama</small>
+            </button>
+
+            <button class="mode-card" data-mode="uncle" type="button">
+              <span class="mode-emoji">👴</span>
+              <span class="mode-name">Uncle Mode</span>
+              <small>Career, savings, KSEB bill, lectures</small>
+            </button>
+          </div>
+        </div>
+
+        <button
+          class="btn-primary profile-submit-btn"
+          id="createProfileBtn"
+          type="button"
+        >
+          🔮 എന്റെ ജാതകം റെഡി ആക്കൂ
+        </button>
+      </div>
+    </section>
+
+    <!-- STEP 2: PERSONAL DASHBOARD -->
+    <section
+      class="personal-dashboard"
+      id="personalDashboard"
+      style="display: none;"
+    >
+      <div class="personal-header">
+        <div class="profile-avatar" id="profileAvatar">A</div>
+
+        <div>
+          <p class="small-label">Kumbidi Times Personal Reading</p>
+          <h2 id="personalGreeting">Aiyyo, mole!</h2>
+          <p id="personalRashiInfo"></p>
+        </div>
+      </div>
+
+      <article class="personal-reading-card">
+        <h3>🔮 നിന്റെ ഇന്നത്തെ personal rashi bhalam</h3>
+        <p id="personalReadingText"></p>
+      </article>
+
+      <article class="appliance-form-card">
+        <h3>ഇനി appliance-ന്റെ പേര് പറയു</h3>
+
+        <p>
+          Fridge മാത്രം അല്ല. Fan, Air Fryer, Laptop Charger, Mixer,
+          പഴയ Nokia phone—anything works, mole.
+        </p>
+
+        <label for="applianceInput">Appliance Name</label>
+
+        <input
+          type="text"
+          id="applianceInput"
+          placeholder="Example: Air Fryer"
+          maxlength="40"
+        />
+
+        <button
+          class="btn-primary"
+          id="checkApplianceBtn"
+          type="button"
+        >
+          ✨ നമ്മൾ യോജിക്കുമോ?
+        </button>
+      </article>
+    </section>
+
+    <!-- STEP 3: LOADING -->
+    <section class="loading" id="loading" style="display: none;">
+      <div class="spinner"></div>
+      <h2>രാശി നോക്കുന്നു...</h2>
+      <p id="loadingText">
+        ഒരു മിനിറ്റ് മോനേ... നക്ഷത്രങ്ങൾ മീറ്റിങ്ങിലാണ്.
+      </p>
+    </section>
+
+    <!-- STEP 4: RESULT -->
+    <section
+      class="horoscope-section"
+      id="horoscopeSection"
+      style="display: none;"
+    >
+      <article class="horoscope-card">
+        <div class="appliance-icon" id="applianceIcon">✨</div>
+        <h2 id="applianceName">Appliance</h2>
+        <p class="date" id="currentDate"></p>
+
+        <!-- Appliance Jathakam -->
+        <section class="appliance-jathakam">
+          <div class="jathakam-header">
+            <span class="jathakam-symbol">🔯</span>
+
+            <div>
+              <p class="jathakam-kicker">Kumbidi Times Certified</p>
+              <h3>Appliance ജാതകം</h3>
+            </div>
+          </div>
+
+          <p class="jathakam-intro" id="jathakamIntro">
+            ഈ appliance-ന്റെ ജനന വിവരം aunty കണ്ടെത്തുന്നു...
+          </p>
+
+          <div class="jathakam-grid">
+            <article class="jathakam-item">
+              <span class="jathakam-label">ജനന ദിവസം</span>
+              <strong id="applianceBorn">--</strong>
+            </article>
+
+            <article class="jathakam-item">
+              <span class="jathakam-label">രാശി</span>
+              <strong id="applianceRashi">--</strong>
+            </article>
+
+            <article class="jathakam-item">
+              <span class="jathakam-label">നക്ഷത്രം</span>
+              <strong id="applianceNakshatra">--</strong>
+            </article>
+
+            <article class="jathakam-item">
+              <span class="jathakam-label">ലഗ്നം</span>
+              <strong id="applianceLagnam">--</strong>
+            </article>
+
+            <article class="jathakam-item">
+              <span class="jathakam-label">ദോഷം</span>
+              <strong id="applianceDosham">--</strong>
+            </article>
+
+            <article class="jathakam-item">
+              <span class="jathakam-label">ജീവിതലക്ഷ്യം</span>
+              <strong id="applianceCareer">--</strong>
+            </article>
+          </div>
+
+          <div class="family-opinion">
+            <h4>👵 കുടുംബ അഭിപ്രായം</h4>
+            <p id="familyOpinion"></p>
+          </div>
+        </section>
+
+        <!-- Relationship Reading -->
+        <section class="info-card reading">
+          <h3>📜 Relationship Rashi Bhalam</h3>
+          <p id="horoscopeText"></p>
+        </section>
+
+        <!-- Compatibility Result -->
+        <section class="compatibility-result">
+          <div class="match-score">
+            <h3>💕 നിങ്ങളുടെ യോജിപ്പ്</h3>
+
+            <div class="score-circle">
+              <span id="matchPercentage">0%</span>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <h3 id="verdictHeading">⚖️ Auntyയുടെ Verdict</h3>
+            <p id="verdictText"></p>
+          </div>
+
+          <div class="result-box">
+            <h3 id="adviceHeading">💡 Auntyയുടെ Upadesham</h3>
+            <p id="relationshipAdviceText"></p>
+          </div>
+
+          <div class="warning" id="warningBox" style="display: none;">
+            <h3>⚠️ Important Family Warning</h3>
+            <p id="warningText"></p>
+          </div>
+
+          <!-- Cosmic Timing Alert -->
+          <section class="timing-alert">
+            <div class="timing-heading">
+              <span class="timing-icon">⏰</span>
+
+              <div>
+                <p class="timing-kicker" id="timingKicker">
+                  Kumbidi Times Important Notice
+                </p>
+
+                <h3 id="timingTitle">ഇന്നത്തെ Cosmic Deadline</h3>
+              </div>
+            </div>
+
+            <div class="deadline-clock">
+              <span id="deadlineTime">--:-- PM</span>
+            </div>
+
+            <p class="deadline-task" id="deadlineTask">
+              Your cosmic task will appear here.
+            </p>
+
+            <div class="deadline-outcome good-outcome">
+              <h4>✅ ചെയ്താൽ എന്ത് സംഭവിക്കും?</h4>
+              <p id="ifDoneText"></p>
+            </div>
+
+            <div class="deadline-outcome bad-outcome">
+              <h4>⚠️ ചെയ്തില്ലെങ്കിൽ എന്ത് സംഭവിക്കും?</h4>
+              <p id="ifNotDoneText"></p>
+            </div>
+
+            <p class="timing-disclaimer">
+              *Kumbidi Times timing only. Real astrologers may have different opinions.
+            </p>
+          </section>
+
+          <!-- Remedy -->
+          <section class="remedy-section">
+            <h3>🪔 പരിഹാരം വേണോ?</h3>
+            <p>കാര്യങ്ങൾ ശരിയാക്കാൻ aunty/uncle-approved remedy.</p>
+
+            <button class="btn-primary" id="remedyBtn" type="button">
+              പരിഹാരം പറയൂ
+            </button>
+
+            <div
+              class="remedy-result"
+              id="remedyResult"
+              style="display: none;"
+            >
+              <p id="remedyText"></p>
+            </div>
+          </section>
+        </section>
+      </article>
+
+      <div class="actions">
+        <button class="btn-secondary" id="newApplianceBtn" type="button">
+          ➕ വേറെ appliance നോക്കാം
+        </button>
+
+        <button class="btn-primary" id="shareBtn" type="button">
+          📤 കുടുംബ ഗ്രൂപ്പിലേക്ക് അയക്കൂ
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        This is a comedy/parody astrology project. Do not make actual life,
+        money, health, or relationship decisions based on aunty’s reading.
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
